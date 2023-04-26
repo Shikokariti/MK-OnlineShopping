@@ -1,0 +1,171 @@
+body {
+    background: #1c3152;
+    background: linear-gradient(to left, #1c4c6b, #0a1b49);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#loginScreenBtn , #signUpBtn, #loginBtn, #close, #createSitePopupBtn {
+    width: 200px;
+}
+#mySitesArea {
+    width: auto;
+    margin: auto;
+    height: 500px;
+    margin-bottom: 180px;
+}
+#mySitesDiv {
+    margin-top: 100px;
+}
+#createSiteSection, #create-item-popup, #edit-item-section, #edit-promotion-popup, #delete-item-section, #delete-promotion-dialog-section, #no-item-selected-error-section,#no-promotion-selected-error-section, #create-promotion-popup, #create-promotion-type-dialog-section {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vw;
+    z-index: 100;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.item-details-headers, .promotion-details-headers {
+    font-size: 20px;
+    font-weight: bold;
+}
+.shadowTest {
+    background-color: #303234;
+}
+.edit-site-menu {
+    width: 220px;
+    height: 40px;
+    font-size: 20px;
+}
+#sidebar{
+    background-color: #020723;
+    width: 250px;
+    height: 800px;
+    margin: 0px;
+    padding-right: 30px;
+}
+.iframes {
+    display: none;
+}
+#back-to-mySites {
+    margin-left: 10px;
+}
+#contView {
+    height: 100%;
+}
+.cards-image {
+    width: 150px;
+    height: 150px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+#footer-index{
+    margin-top: auto;
+}
+.sites-button {
+    width: 800px;
+}
+#mySitesButtons {
+    width: 1500px;
+}
+.edit-item-section-image {
+    width: 150px;
+    height: 150px;
+}
+.edit-item-buttons {
+    width: 50px;
+    height: 50px;
+}
+.shadow-edit-sites-nav-buttons {
+    background-color: #0b7388;
+}
+.item-card {
+    width: 200px;
+    margin: 5px;
+    background-color: #c49f8a;
+    font-family: "Times New Roman";
+}
+.item-card-description {
+    height: 80px;
+    font-size: 18px;
+}
+.item-card-price {
+    color: #050904;
+    font-size: 30px;
+}
+.item-card-add-btn {
+    background-color: green;
+    width: 150px;
+    margin-top: 2px;
+}
+#check-box-active-label {
+    margin-bottom: 10px;
+}
+#promotion-type-select-box {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.promotion-type-btn {
+    width: 180px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d70d0d;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 2px;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #08700c;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.switch {
+    height: 20px;
+    width: 53px;
+}
+.not-supported {
+    font-size: 15px;
+    color: red;
+}
